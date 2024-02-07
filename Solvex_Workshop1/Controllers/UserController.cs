@@ -9,6 +9,8 @@ using System.Security.Claims;
 using System.Text.RegularExpressions;
 using System.Text;
 using Application.Helpers;
+using AutoMapper;
+using Application.DTOs;
 
 namespace Solvex_Workshop1.Controllers
 {
@@ -16,28 +18,30 @@ namespace Solvex_Workshop1.Controllers
     public class UserController : Controller
     {
         private readonly ApplicationDbContext _applicationContext;
+        private readonly IMapper _mapper;
 
-        public UserController(ApplicationDbContext applicationContext)
+        public UserController(ApplicationDbContext applicationContext, IMapper mapper)
         {
             _applicationContext = applicationContext;
+            _mapper = mapper;
         }
 
         [HttpPost("authenticate")]
-        public async Task<ActionResult> Authenticate([FromBody] User userObj)
+        public async Task<ActionResult> Authenticate([FromBody] LogIn logIn)
         {
-            if (userObj == null)
+            if (logIn == null)
             {
                 return BadRequest();
             }
 
 
-            var user = await _applicationContext.Users.FirstOrDefaultAsync(x => x.Username == userObj.Username);
+            var user = await _applicationContext.Users.FirstOrDefaultAsync(x => x.Username == logIn.Username);
             if (user == null)
             {
                 return NotFound(new { Message = "User Not Found!" });
             }
 
-            if (!PasswordHasher.VerifyPassword(userObj.Password, user.Password))
+            if (!PasswordHasher.VerifyPassword(logIn.Password, user.Password))
             {
                 return BadRequest(new { Message = "Password is Incorrect" });
             }
@@ -52,29 +56,32 @@ namespace Solvex_Workshop1.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<ActionResult> RegisterUser([FromBody] User userObj)
+        public async Task<ActionResult> RegisterUser([FromBody] SignUp signUp)
         {
-            if (userObj == null)
+            if (signUp == null)
             {
                 return BadRequest();
             }
 
             //Check username
-            if (await CheckUserNameExistAsync(userObj.Username))
+            if (await CheckUserNameExistAsync(signUp.Username))
             {
                 return BadRequest(new { Message = "Username already exist!" });
             }
 
             //Check email
-            if (await CheckEmailExistAsync(userObj.Email))
+            if (await CheckEmailExistAsync(signUp.Email))
             {
                 return BadRequest(new { Message = "Email already exist!" });
             }
 
-            userObj.Password = PasswordHasher.HashPassword(userObj.Password);
-            userObj.Role = "User";
-            userObj.Token = "";
-            await _applicationContext.Users.AddAsync(userObj);
+            var user = _mapper.Map<User>(signUp);
+
+
+            user.Password = PasswordHasher.HashPassword(user.Password);
+            user.Role = "User";
+            user.Token = "";
+            await _applicationContext.Users.AddAsync(user);
             await _applicationContext.SaveChangesAsync();
             return Ok(new
             {

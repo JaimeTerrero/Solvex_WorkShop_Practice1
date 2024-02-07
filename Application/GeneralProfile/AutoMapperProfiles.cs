@@ -14,6 +14,10 @@ namespace Application.GeneralProfile
         public AutoMapperProfiles()
         {
             CreateMap<ProductDto, Product>();
+
+            CreateMap<SignUp, User>();
+
+            CreateMap<LogIn, User>();
         }
     }
 }
