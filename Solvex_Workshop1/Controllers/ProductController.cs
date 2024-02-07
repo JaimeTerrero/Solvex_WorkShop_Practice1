@@ -17,7 +17,7 @@ namespace Solvex_Workshop1.Controllers
             _productServices = new(applicationDbContext, mapper);
         }
 
-        [HttpGet]
+        [HttpGet("GetAllProducts")]
         public async Task<ActionResult> GetAllProducts()
         {
             var product = await _productServices.GetAll();
@@ -25,7 +25,7 @@ namespace Solvex_Workshop1.Controllers
             return Ok(product);
         }
 
-        [HttpPost]
+        [HttpPost("CreateProduct")]
         public async Task<ActionResult> CreateProduct(ProductDto productDto)
         {
             var product = await _productServices.Add(productDto);
