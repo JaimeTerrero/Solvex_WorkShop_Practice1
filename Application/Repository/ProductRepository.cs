@@ -6,7 +6,6 @@ using Database.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -42,6 +41,14 @@ namespace Application.Repository
         public async Task<List<Product>> GetAllAsync()
         {
             return await _applicationDbContext.Set<Product>().ToListAsync();
+        }
+
+        // LINQ ADDED
+        public async Task<List<Product>> GetProductByName(string name)
+        {
+            return await _applicationDbContext.Set<Product>()
+                .Where(p => p.Name == name)
+                .ToListAsync();
         }
 
         public async Task<Product> GetByIdAsync(int id)

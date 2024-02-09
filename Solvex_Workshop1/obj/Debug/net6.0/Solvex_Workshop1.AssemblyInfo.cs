@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Solvex_Workshop1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9919b3acac632c1b09cc82fb8dbc119ec44ff36b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef84344262f130b69eb138bf5f8ee2e3168cb5a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Solvex_Workshop1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Solvex_Workshop1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

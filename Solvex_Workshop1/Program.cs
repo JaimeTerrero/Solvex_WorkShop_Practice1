@@ -1,3 +1,5 @@
+using Application.Interfaces;
+using Application.Repository;
 using Database;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +20,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 // For Token Implementation
 builder.Services.AddAuthentication(x =>
@@ -63,3 +66,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }

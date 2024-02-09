@@ -14,6 +14,7 @@ namespace Application.Interfaces
         Task<Product> GetByIdAsync(int id);
         Task<List<Product>> GetAllAsync();
         Task DeleteAsync(int id);
+        Task<List<Product>> GetProductByName(string name);
         Task UpdateAsync(int id, ProductDto entity);
     }
 }

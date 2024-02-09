@@ -1,4 +1,5 @@
 ﻿using Application.DTOs;
+using Application.Interfaces;
 using Application.Repository;
 using AutoMapper;
 using Database;
@@ -10,17 +11,25 @@ namespace Solvex_Workshop1.Controllers
     [ApiController]
     public class ProductController : Controller
     {
-        private readonly ProductRepository _productRepository;
+        private readonly IProductRepository _productRepository;
 
-        public ProductController(ApplicationDbContext applicationDbContext, IMapper mapper)
+        public ProductController(IProductRepository productRepository)
         {
-            _productRepository = new(applicationDbContext, mapper);
+            _productRepository = productRepository;
         }
 
         [HttpGet("GetAllProducts")]
         public async Task<ActionResult> GetAllProducts()
         {
             var product = await _productRepository.GetAllAsync();
+
+            return Ok(product);
+        }
+
+        [HttpGet("GetProductByName")]
+        public async Task<ActionResult> GetProductByName(string name)
+        {
+            var product = await _productRepository.GetProductByName(name);
 
             return Ok(product);
         }
