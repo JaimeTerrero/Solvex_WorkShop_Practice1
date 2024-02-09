@@ -1,5 +1,5 @@
 ﻿using Application.DTOs;
-using Application.Services;
+using Application.Repository;
 using AutoMapper;
 using Database;
 using Microsoft.AspNetCore.Mvc;
@@ -10,17 +10,17 @@ namespace Solvex_Workshop1.Controllers
     [ApiController]
     public class ProductController : Controller
     {
-        private readonly ProductServices _productServices;
+        private readonly ProductRepository _productRepository;
 
         public ProductController(ApplicationDbContext applicationDbContext, IMapper mapper)
         {
-            _productServices = new(applicationDbContext, mapper);
+            _productRepository = new(applicationDbContext, mapper);
         }
 
         [HttpGet("GetAllProducts")]
         public async Task<ActionResult> GetAllProducts()
         {
-            var product = await _productServices.GetAll();
+            var product = await _productRepository.GetAllAsync();
 
             return Ok(product);
         }
@@ -28,7 +28,7 @@ namespace Solvex_Workshop1.Controllers
         [HttpPost("CreateProduct")]
         public async Task<ActionResult> CreateProduct(ProductDto productDto)
         {
-            var product = await _productServices.Add(productDto);
+            var product = await _productRepository.AddAsync(productDto);
 
             return Ok(product);
         }
@@ -36,7 +36,7 @@ namespace Solvex_Workshop1.Controllers
         [HttpGet("{id:int}")]
         public async Task<ActionResult> GetProductById(int id)
         {
-            var product = await _productServices.GetById(id);
+            var product = await _productRepository.GetByIdAsync(id);
 
             return Ok(product);
         }
@@ -44,7 +44,7 @@ namespace Solvex_Workshop1.Controllers
         [HttpPut("{id:int}")]
         public async Task<ActionResult> UpdateProduct(int id, ProductDto productDto)
         {
-            await _productServices.Update(id, productDto);
+            await _productRepository.UpdateAsync(id, productDto);
 
             return NoContent();
         }
@@ -52,7 +52,7 @@ namespace Solvex_Workshop1.Controllers
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> DeleteProduct(int id)
         {
-            await _productServices.Delete(id);
+            await _productRepository.DeleteAsync(id);
 
             return NoContent();
         }
