@@ -28,3 +28,19 @@ C:\Users\MSI\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\ne
 C:\Users\MSI\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\refint\Application.dll
 C:\Users\MSI\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\MSI\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\bin\Debug\net6.0\Application.dll
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\bin\Debug\net6.0\Application.pdb
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\bin\Debug\net6.0\Database.dll
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\bin\Debug\net6.0\Database.pdb
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.sourcelink.json
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.dll
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\refint\Application.dll
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\Jaime Terrero\Documents\GitHub\Solvex_WorkShop_Practice1\Application\obj\Debug\net6.0\ref\Application.dll
