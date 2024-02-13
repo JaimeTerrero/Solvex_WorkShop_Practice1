@@ -2014,19 +2014,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jaime Terrero\\.nuget\\packages\\": {}
+    "C:\\Users\\MSI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\Database.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\Database.csproj",
       "projectName": "Database",
-      "projectPath": "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\Database.csproj",
-      "packagesPath": "C:\\Users\\Jaime Terrero\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\obj\\",
+      "projectPath": "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\Database.csproj",
+      "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jaime Terrero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2087,7 +2087,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

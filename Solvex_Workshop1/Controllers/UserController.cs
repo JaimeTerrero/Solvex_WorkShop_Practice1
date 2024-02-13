@@ -89,13 +89,6 @@ namespace Solvex_Workshop1.Controllers
             });
         }
 
-        [Authorize]
-        [HttpGet]
-        public async Task<ActionResult<User>> GetAllUsers()
-        {
-            return Ok(await _applicationContext.Users.ToListAsync());
-        }
-
 
         #region "methods"
         private async Task<bool> CheckUserNameExistAsync(string username)

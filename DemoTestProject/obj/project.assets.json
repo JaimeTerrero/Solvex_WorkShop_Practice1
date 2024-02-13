@@ -5045,19 +5045,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jaime Terrero\\.nuget\\packages\\": {}
+    "C:\\Users\\MSI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\DemoTestProject\\DemoTestProject.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\DemoTestProject\\DemoTestProject.csproj",
       "projectName": "DemoTestProject",
-      "projectPath": "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\DemoTestProject\\DemoTestProject.csproj",
-      "packagesPath": "C:\\Users\\Jaime Terrero\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\DemoTestProject\\obj\\",
+      "projectPath": "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\DemoTestProject\\DemoTestProject.csproj",
+      "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\DemoTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jaime Terrero\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5071,14 +5071,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Application\\Application.csproj"
+            "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Application\\Application.csproj"
             },
-            "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\Database.csproj": {
-              "projectPath": "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\Database.csproj"
+            "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\Database.csproj": {
+              "projectPath": "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Database\\Database.csproj"
             },
-            "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Solvex_Workshop1\\Solvex_Workshop1.csproj": {
-              "projectPath": "C:\\Users\\Jaime Terrero\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Solvex_Workshop1\\Solvex_Workshop1.csproj"
+            "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Solvex_Workshop1\\Solvex_Workshop1.csproj": {
+              "projectPath": "C:\\Users\\MSI\\Documents\\GitHub\\Solvex_WorkShop_Practice1\\Solvex_Workshop1\\Solvex_Workshop1.csproj"
             }
           }
         }
@@ -5130,7 +5130,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

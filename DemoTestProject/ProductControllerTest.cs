@@ -13,6 +13,7 @@ namespace DemoTestProject
         [TestMethod]
         public async Task GetByIdAsync_ShouldReturnProduct_WhenProductExits()
         {
+            // Arrange
             var product = new Product
             {
                 Id = 1,
@@ -25,13 +26,17 @@ namespace DemoTestProject
             productRepository.Setup(x => x.GetByIdAsync(It.IsAny<int>())).Returns(Task.FromResult(product));
             var controller = new ProductController(productRepository.Object);
 
+            // Act
             var getProductById = controller.GetProductById(1);
+
+            // Assert
             Assert.IsNotNull(getProductById);
         }
 
         [TestMethod]
         public async Task AddAsync_ShouldAddProduct_WhenProductIsValid()
         {
+            // Arrange
             var product = new Product
             {
                 Name = "Sopita",
@@ -48,7 +53,10 @@ namespace DemoTestProject
             pr.Details = product.Details;
             pr.Price = product.Price;
 
+            // Act
             var addProduct = await controller.CreateProduct(pr);
+
+            // Assert
             Assert.IsNotNull(addProduct);
         }
 
